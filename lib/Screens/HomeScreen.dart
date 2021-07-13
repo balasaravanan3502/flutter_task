@@ -49,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
       setState(() {
         fav.add(id);
       });
-      print(fav);
+
     }
 
     return 'Done';
