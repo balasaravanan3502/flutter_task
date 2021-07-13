@@ -11,7 +11,6 @@ class News with ChangeNotifier {
     try {
       final response = await http.get(Uri.parse(url));
       news.addAll(json.decode(response.body)['data']);
-      print(news);
     } catch (error) {
       print(error);
     }
